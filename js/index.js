@@ -5,7 +5,7 @@ const playVideo = (event) => {
     iframe.setAttribute("src", `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`);
     iframe.setAttribute("allowfullscreen", "");
     iframe.style.width = "100%";
-    iframe.style.height = "auto";
+    iframe.style.height = "100%";
     
     const thumbnail = document.getElementById("video-thumbnail-click");
     thumbnail.style.display = "none";
