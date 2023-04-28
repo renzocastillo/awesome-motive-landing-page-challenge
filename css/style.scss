@@ -292,11 +292,6 @@ section .content {
     line-height: 30px
 }
 
-#features .content {
-    padding-bottom: 100px;
-    padding-top: 370px
-}
-
 #header .content {
     z-index: 1;
     padding-top: 53px
@@ -308,6 +303,7 @@ section .content {
 }
 
 #features {
+    padding-top: 270px
 }
 
 #hero {
@@ -459,10 +455,91 @@ section .content {
 
 .intro-heading .badge {
     position: absolute;
-    top: -18px
+    top: -18px;
 }
 
 .buttons .left.left-default {
     background-color: #FFF;
     color: $secondary_text_color
+}
+
+@media (max-width:478px) {
+    section .content {
+        max-width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 10%;
+        padding-top: 10%
+    }
+
+    .content .buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px
+    }
+
+    .video-thumbnail {
+        width: 100%;
+        position: relative
+    }
+
+    #header {
+        height: auto
+    }
+
+    .feature-items-container {
+        .feature-item {
+            padding-right: 0;
+            padding-left: 0;
+
+            &:nth-last-child(-n+3) {
+                padding-top: 0px;
+                padding-bottom: 48px;
+            }
+
+            &:last-child {
+                padding-bottom: 0px;
+            }
+
+            &::after,
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    .testimonial-item {
+    }
+
+    .testimonials-container {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    .screenshot-container {
+        flex-wrap: wrap;
+        flex-direction: column-reverse
+    }
+
+    .screenshot-image {
+        max-width: 100%
+    }
+
+    .simple-screenshots img {
+        max-width: 100%
+    }
+
+    .intro-heading .badge {
+        position: absolute;
+        top: -25px;
+        right: 15px
+    }
+
+    #features {
+        padding-top: unset;
+    }
+}
+
+#player {
+    width: inherit
 }
