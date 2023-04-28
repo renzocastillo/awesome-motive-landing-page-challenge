@@ -46,8 +46,8 @@ $shadow_medium: (
 }
 
 $shadow_small: (
-background: #C4C4C4,
-box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15),
+    background: #C4C4C4,
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15),
 );
 
 %shadow-small {
@@ -139,19 +139,18 @@ section .content {
 }
 
 .content .buttons a {
-    padding: 20px 50px;
     text-decoration: none;
     border-radius: 3px;
 }
 
 .content .buttons a.right {
+    padding: 20px 58.5px;
     background: $orange_color;
     color: #FFF;
 }
 
 .buttons a.left {
-    background-color: #FFF;
-    color: $secondary_text_color
+    padding: 20px 84.5px;
 }
 
 #header .content .intro {
@@ -323,6 +322,7 @@ section .content {
     display: flex;
     gap: 20px;
     padding-bottom: 100px;
+    justify-content: space-between;
 }
 
 .testimonial-item {
@@ -355,7 +355,7 @@ section .content {
     color: #AAAAAA;
 }
 
-.content .buttons .left-alt {
+.buttons .left.left-alt {
     background-color: #F8F8F8;
     color: $secondary_text_color;
     border-width: 1px;
@@ -370,8 +370,8 @@ section .content {
 
 .screenshot-container {
     display: flex;
-    justify-content: space-between;
     gap: 50px;
+    justify-content: space-between;
 }
 
 .screenshot-description-title {
@@ -390,7 +390,9 @@ section .content {
 }
 
 .screenshot-image {
-    max-width: 457px
+    max-width: 457px;
+
+    @extend %shadow-medium;
 }
 
 .simple-screenshots {
@@ -402,7 +404,9 @@ section .content {
 }
 
 .simple-screenshots img {
-    width: 455px
+    width: 455px;
+
+    @extend %shadow-small;
 }
 
 .main-text {
@@ -411,6 +415,7 @@ section .content {
     text-align: center;
     padding-top: 100.12px;
     padding-bottom: 100px;
+    font-weight: 700;
 }
 
 .secondary-features .feature-item {
@@ -425,7 +430,7 @@ section .content {
 .header-with-description-header {
     font-size: 24px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: 700;
     color: $primary_text_color;
 }
 
@@ -455,4 +460,9 @@ section .content {
 .intro-heading .badge {
     position: absolute;
     top: -18px
+}
+
+.buttons .left.left-default {
+    background-color: #FFF;
+    color: $secondary_text_color
 }
