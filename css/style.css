@@ -478,6 +478,17 @@ section .content {
   color: #777777;
 }
 
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#video-thumbnail-click {
+  z-index: 0;
+}
+
+/* ** Responsive Styles Smartphone Portrait ** */
 @media (max-width: 478px) {
   section .content {
     max-width: 100%;
@@ -549,12 +560,183 @@ section .content {
     padding-top: unset;
   }
 }
-#player {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+/* ** Responsive Styles Smartphone Landscape ** */
+@media (max-width: 767px) {
+  section .content {
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+  .content .buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    row-gap: 20px;
+  }
+  .video-thumbnail {
+    width: 100%;
+    position: relative;
+  }
+  #header {
+    height: auto;
+  }
+  .feature-items-container {
+  }
+  .feature-items-container .feature-item {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .feature-items-container .feature-item:nth-last-child(-n+3) {
+    padding-top: 0px;
+    padding-bottom: 48px;
+  }
+  .feature-items-container .feature-item:last-child {
+    padding-bottom: 0px;
+  }
+  .feature-items-container .feature-item::after, .feature-items-container .feature-item::before {
+    display: none;
+  }
+  .testimonial-item {
+  }
+  .testimonials-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .screenshot-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .screenshot-image {
+    max-width: 100%;
+  }
+  .simple-screenshots img {
+    max-width: 100%;
+  }
+  .intro-heading .badge {
+    position: absolute;
+    top: -25px;
+    right: 15px;
+  }
+  #features {
+    padding-top: unset;
+  }
+  .simple-screenshots {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .secondary-features .feature-item {
+    width: 100%;
+  }
 }
-
-#video-thumbnail-click {
-  z-index: 0;
+/* ** Responsive Styles Tablet Only ** */
+@media (min-width: 768px) and (max-width: 979px) {
+  section .content {
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+  .content .buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    row-gap: 20px;
+  }
+  .video-thumbnail {
+    width: 100%;
+    position: relative;
+  }
+  #header {
+    height: auto;
+  }
+  .feature-items-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .feature-items-container .feature-item {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .feature-items-container .feature-item:nth-last-child(-n+3) {
+    padding-top: 0px;
+    padding-bottom: 48px;
+  }
+  .feature-items-container .feature-item:last-child {
+    padding-bottom: 0px;
+  }
+  .feature-items-container .feature-item::after, .feature-items-container .feature-item::before {
+    display: none;
+  }
+  .testimonial-item {
+  }
+  .testimonials-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .screenshot-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .screenshot-image {
+    max-width: 100%;
+  }
+  .simple-screenshots img {
+    max-width: 100%;
+  }
+  .intro-heading .badge {
+    position: absolute;
+    top: -25px;
+  }
+  #features {
+    padding-top: unset;
+  }
+  .simple-screenshots {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .secondary-features .feature-item {
+  }
+}
+/* ** Responsive Styles Bigger Tablets ** */
+@media (min-width: 980px) and (max-width: 1099px) {
+  #header .content .intro {
+    max-width: 60vw;
+  }
+}
+/* ** Responsive Styles Standard Desktop Only ** */
+@media (min-width: 1100px) and (max-width: 1404px) {
+  section .content {
+  }
+}
+/*** Responsive Styles Large Desktop And Above ***/
+@media (min-width: 1405px) {
+  section .content {
+  }
 }
