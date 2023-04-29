@@ -1,0 +1,26 @@
+{
+  "name": "renzo-castillo",
+  "version": "1.0.0",
+  "description": "Awesome Motive Developer Applicant Challenge - Design to Landing Page",
+  "main": "style.scss",
+  "scripts": {
+    "watch": "gulp watch",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renzocastillo/awesome-motive-landing-page-challenge.git"
+  },
+  "author": "Renzo Castillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renzocastillo/awesome-motive-landing-page-challenge/issues"
+  },
+  "homepage": "https://github.com/renzocastillo/awesome-motive-landing-page-challenge#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  }
+}
