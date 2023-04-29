@@ -561,7 +561,7 @@ section .content {
   }
 }
 /* ** Responsive Styles Smartphone Landscape ** */
-@media (max-width: 767px) {
+@media (min-width: 479px) and (max-width: 767px) {
   section .content {
     max-width: 100%;
     padding-left: 5%;
@@ -735,7 +735,7 @@ section .content {
   section .content {
   }
 }
-/*** Responsive Styles Large Desktop And Above ***/
+/* ** Responsive Styles Large Desktop And Above ** */
 @media (min-width: 1405px) {
   section .content {
   }

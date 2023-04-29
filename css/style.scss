@@ -552,7 +552,7 @@ section .content {
 }
 
 /* ** Responsive Styles Smartphone Landscape ** */
-@media (max-width:767px) {
+@media (min-width:479px) and (max-width:767px) {
     section .content {
         max-width: 100%;
         padding-left: 5%;
