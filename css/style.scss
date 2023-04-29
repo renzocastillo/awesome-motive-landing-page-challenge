@@ -549,6 +549,10 @@ section .content {
     #features {
         padding-top: unset;
     }
+
+    .screenshot-description {
+        text-align: center
+    }
 }
 
 /* ** Responsive Styles Smartphone Landscape ** */
@@ -649,7 +653,7 @@ section .content {
 
     .content .buttons {
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         row-gap: 20px
     }
 
@@ -721,6 +725,10 @@ section .content {
     }
 
     .secondary-features .feature-item {
+    }
+
+    .screenshot-description {
+        text-align: center
     }
 }
 
