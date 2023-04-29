@@ -58,6 +58,9 @@ $shadow_small: (
 
 /* *
 * Default styles */
+html{
+    overflow-x: hidden;
+}
 body {
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -66,6 +69,7 @@ body {
     line-height: 24px;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 h2,
@@ -481,11 +485,11 @@ section {
 }
 
 /* ** Responsive Styles Super small Smartphone Portrait ** */
-@media (max-width:281px) {
+@media (max-width:299px) {
     .intro-heading .badge {
         position: absolute;
         top: -5px;
-        margin-left: 0px;
+        margin-left: -5px;
     }
     .content{
         .buttons{
@@ -500,7 +504,14 @@ section {
         }
     }
 }
-
+/* ** Responsive Styles to fix header on specific line break ** */
+@media (min-width:300px) and (max-width:350px) {
+    .intro-heading .badge {
+        position: absolute;
+        margin-left: -40px;
+        top: -10px;
+    }
+}
 /* ** Responsive Styles Smartphone Portrait ** */
 @media (max-width:478px) {
     section {
